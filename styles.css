@@ -1,0 +1,149 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 2rem;
+  background: #fafafa;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    text-align: center;
+    width: 115px;
+    font-size: 14px;
+    padding: 3px;
+}
+
+.section {
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.divCapital {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bankImg {
+    width: 25px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.bank-cell {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+.best {
+  background-color: #d9fdd3;
+  transition: background-color 0.3s ease;
+}
+
+.worst {
+  background-color: #fdd9d9;
+  transition: background-color 0.3s ease;
+}
+
+.summary-message {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    margin: 1rem;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  td {
+    text-align: left;
+    padding: 6px 0;
+    border: none;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
