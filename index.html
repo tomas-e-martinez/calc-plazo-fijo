@@ -9,10 +9,14 @@
   <style src="styles.css"></style>
 </head>
 <body>
-  <h1>Calculadora de Plazos Fijos</h1>
+  <div class="divTitle">
+    <h1>Calculadora de Plazos Fijos</h1>
+    <p>Tomás Ezequiel Martínez - Introducción al Análisis de Datos</p>
+  </div>
 
   <section class="section">
     <h3>Tasas anuales históricas</h3>
+    <p>Ingrese las tasas de interés para cada banco y año</p>
     <form id="formTasas">
       <table>
         <thead>
@@ -88,7 +92,8 @@
       </table>
       <div class="formFooter">
           <div class="divCapital">
-              <h3>Capital a invertir</h3>
+              <h3>Capital</h3>
+              <p>Ingrese el capital a invertir</p>
               <span>$</span>
               <input type="number" step="any" id="capital" value="850000.00" required>
           </div>
